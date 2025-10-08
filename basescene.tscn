@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://by1p38wo6qh3m"]
+[gd_scene load_steps=4 format=3 uid="uid://by1p38wo6qh3m"]
+
+[ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_fkjwv"]
+[ext_resource type="TileSet" uid="uid://dfxhyp7tpkn8i" path="res://new_tile_set.tres" id="1_j1jbs"]
+[ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="3_u65mj"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_fkjwv")
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(33, -10)
+tile_set = ExtResource("1_j1jbs")
+format = 2
+layer_0/tile_data = PackedInt32Array(-2, 786434, 4, -65536, 786434, 4, -65534, 786434, 4, 65538, 786434, 4, 65536, 786434, 4, 131070, 786434, 4, 131068, 786434, 4, -4, 786434, 4, 262138, 262146, 2, 131066, 655362, 4, -6, 655362, 4, -131078, 2, 0, -131076, 524290, 4, -131074, 524290, 4, -196608, 524290, 4, -196606, 524290, 4, 262140, 524290, 2, 262142, 524290, 2, 262143, 524290, 2, 196609, 524290, 2, 196610, 524290, 2, 196612, 131074, 2, -196604, 393218, 0, 65540, 655362, 2, -65532, 655362, 2)
+
+[node name="Node2D" parent="." instance=ExtResource("3_u65mj")]
+position = Vector2(52, 32)

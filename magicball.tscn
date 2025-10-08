@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvvxlh2am43bo"]
+
+[ext_resource type="Texture2D" uid="uid://7olkf0lpwqga" path="res://2MagicGolfBall.png" id="1_xl47p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tiuuw"]
+radius = 27.964872
+
+[node name="Node2D" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.359375, 0.359375)
+shape = SubResource("CircleShape2D_tiuuw")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("1_xl47p")

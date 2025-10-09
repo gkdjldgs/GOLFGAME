@@ -53,4 +53,4 @@ func _mouse_released():
 		var forceX = (endline.x - _ball.position.x) * 4
 		var forceY = (endline.y - _ball.position.y) * 4
 		
-		_ball.apply_impulse(Vector2(forceX, forceY))
+		_ball.apply_impulse(Vector2(-forceX, -forceY))

@@ -5,7 +5,7 @@ var _is_mouse_down := false
 @onready var _ball = $magicball
 
 func _ready():
-	_ball.apply_impulse(Vector2(200, 200))
+	pass
 	
 func _process(delta):
 	pass
@@ -18,6 +18,7 @@ func _input(event):
 				_is_mouse_down = true
 			else:
 				_is_mouse_down = false
+				_mouse_released()
 	if event is InputEventMouseMotion and _is_mouse_down:
 		mousepos = get_local_mouse_position()
 	else:
@@ -39,3 +40,17 @@ func _draw():
 		elif distance < 150:
 			color = Color.DARK_BLUE
 		draw_line(_ball.position, endline, color, 7)
+
+func _mouse_released():
+	if mousepos != null:
+		var endline = mousepos
+		var distance = _ball.position.distance_to(endline)
+		
+		if distance > 100:
+			var direction = (endline - _ball.position).normalized()
+			endline = _ball.position + direction * 100
+		
+		var forceX = (endline.x - _ball.position.x) * 4
+		var forceY = (endline.y - _ball.position.y) * 4
+		
+		_ball.apply_impulse(Vector2(forceX, forceY))

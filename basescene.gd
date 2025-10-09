@@ -1,32 +1,29 @@
 extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 var mousepos = null
-var ismousedown = false
-@onready var ball = $magicball
+var _is_mouse_down := false
+@onready var _ball = $magicball
 
-func _input(event) -> void:
+func _ready():
+	pass # Replace with function body.
+func _process(delta):
+	pass
+
+
+func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.is_pressed():
-				ismousedown = true
+				_is_mouse_down = true
 			else:
-				ismousedown = false
-	if event is InputEventMouseButton and ismousedown:
+				_is_mouse_down = false
+	if event is InputEventMouseButton and _is_mouse_down:
 		mousepos = get_local_mouse_position()
 	else:
 		mousepos = null
 		
-		queue_redraw()
+	queue_redraw()
 		
-func lines():
+func _draw():
 	if mousepos != null:
-		draw_line(ball.position, mousepos, Color.YELLOW, 7)
+		draw_line(_ball.position, mousepos, Color.YELLOW, 7)

@@ -42,7 +42,7 @@ func _draw():
 		draw_line(_ball.position, endline, color, 7)
 
 func _mouse_released():
-	if mousepos != null:
+	if mousepos != null and !_ball.is_moving():
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
 		

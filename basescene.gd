@@ -1,11 +1,12 @@
 extends Node2D
-
+var color = Color.AZURE
 var mousepos = null
 var _is_mouse_down := false
 @onready var _ball = $magicball
 
 func _ready():
-	pass # Replace with function body.
+	_ball.apply_impulse(Vector2(200, 200))
+	
 func _process(delta):
 	pass
 
@@ -17,7 +18,7 @@ func _input(event):
 				_is_mouse_down = true
 			else:
 				_is_mouse_down = false
-	if event is InputEventMouseButton and _is_mouse_down:
+	if event is InputEventMouseMotion and _is_mouse_down:
 		mousepos = get_local_mouse_position()
 	else:
 		mousepos = null
@@ -26,4 +27,15 @@ func _input(event):
 		
 func _draw():
 	if mousepos != null:
-		draw_line(_ball.position, mousepos, Color.YELLOW, 7)
+		var endline = mousepos
+		var distance = _ball.position.distance_to(endline)
+		if distance > 150:
+			var direction = (endline - _ball.position).normalized()
+			endline = _ball.position + direction * 100
+		if distance < 50:
+			color = Color.AQUA
+		elif distance < 100:
+			color = Color.CORNFLOWER_BLUE
+		elif distance < 150:
+			color = Color.DARK_BLUE
+		draw_line(_ball.position, endline, color, 7)

@@ -9,6 +9,7 @@ script = ExtResource("1_fkjwv")
 
 [node name="TileMap" type="TileMap" parent="."]
 process_priority = -2
+z_index = -1
 position = Vector2(92, 46)
 tile_set = ExtResource("1_j1jbs")
 format = 2

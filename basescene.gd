@@ -49,8 +49,8 @@ func _mouse_released():
 			var direction = (endline - _ball.position).normalized()
 			endline = _ball.position + direction * 100
 		
-		var forceX = (endline.x - _ball.position.x) * 4
-		var forceY = (endline.y - _ball.position.y) * 4
+		var forceX = (endline.x - _ball.position.x) * 6
+		var forceY = (endline.y - _ball.position.y) * 6
 		
 		_ball.apply_impulse(Vector2(-forceX, -forceY))
 		stroke = stroke + 1

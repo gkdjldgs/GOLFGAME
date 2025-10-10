@@ -5,12 +5,17 @@ var _is_mouse_down := false
 @onready var _ball = $magicball
 var stroke = 0
 var level = 1
+
 func _ready():
 	pass
 	
 func _process(delta):
-	print(stroke)
-
+	pass
+func requirements():
+	if level <= 1:
+		_ball.global_position = Vector2(-370, 280)
+	elif level <= 2:
+		_ball.global_position = Vector2(0, 0)
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
@@ -57,4 +62,11 @@ func _mouse_released():
 		stroke = stroke + 1
 		
 func nextlevel():
-	
+	if level == 1:
+		pass
+	elif level == 2:
+		pass
+	elif level == 3:
+		pass
+	elif level == 4:
+		pass

@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	Holescript.level = Holescript.level + 1
-	Holescript.requirements()
+		if Holescript.level == 1:
+			get_tree().change_scene_to_file("res://Holenumber1.tscn")

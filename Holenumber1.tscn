@@ -10,6 +10,7 @@ script = ExtResource("1_5j75e")
 
 [node name="magicball" parent="." instance=ExtResource("3_txy8s")]
 position = Vector2(-369, 290)
+mass = 0.708
 linear_damp = 0.6
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -24,4 +25,5 @@ layer_0/tile_data = PackedInt32Array(-2, 786434, 4, -4, 786434, 4, 131068, 78643
 position = Vector2(-190, 187)
 
 [node name="Node2D" parent="." instance=ExtResource("4_b07e2")]
+visible = false
 position = Vector2(-338, 428)

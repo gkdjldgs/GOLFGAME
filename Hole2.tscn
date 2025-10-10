@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://onrw3i4832ft"]
+[gd_scene load_steps=2 format=3 uid="uid://onrw3i4832ft"]
+
+[ext_resource type="PackedScene" uid="uid://cqur1s7igcj5n" path="res://Holenumber2.tscn" id="1_iwf7m"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Hole2scrip" parent="." instance=ExtResource("1_iwf7m")]

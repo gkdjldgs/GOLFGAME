@@ -3,7 +3,7 @@ var color = Color.AZURE
 var mousepos = null
 var _is_mouse_down := false
 @onready var _ball = $magicball
-var stroke = 0
+var stroke := 0
 var level = 1
 
 func _ready():
@@ -57,9 +57,9 @@ func _mouse_released():
 		
 		var forceX = (endline.x - _ball.position.x) * 6
 		var forceY = (endline.y - _ball.position.y) * 6
-		
-		_ball.apply_impulse(Vector2(-forceX, -forceY))
 		stroke = stroke + 1
+		_ball.apply_impulse(Vector2(-forceX, -forceY))
+		print_debug(stroke)
 		
 func nextlevel():
 	if level == 1:

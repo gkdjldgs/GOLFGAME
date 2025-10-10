@@ -3,13 +3,12 @@ var color = Color.AZURE
 var mousepos = null
 var _is_mouse_down := false
 @onready var _ball = $magicball
-
+var stroke = 0
 func _ready():
 	pass
 	
 func _process(delta):
-	pass
-
+	print(stroke)
 
 func _input(event):
 	if event is InputEventMouseButton:
@@ -54,3 +53,5 @@ func _mouse_released():
 		var forceY = (endline.y - _ball.position.y) * 4
 		
 		_ball.apply_impulse(Vector2(-forceX, -forceY))
+		stroke = stroke + 1
+		

@@ -1,21 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://by1p38wo6qh3m"]
+[gd_scene load_steps=4 format=3 uid="uid://bnp5fkcp2nwtu"]
 
-[ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_fkjwv"]
-[ext_resource type="TileSet" uid="uid://dfxhyp7tpkn8i" path="res://new_tile_set.tres" id="1_j1jbs"]
-[ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="3_u65mj"]
+[ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_5j75e"]
+[ext_resource type="TileSet" uid="uid://dfxhyp7tpkn8i" path="res://new_tile_set.tres" id="2_b07e2"]
+[ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="3_txy8s"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_fkjwv")
+script = ExtResource("1_5j75e")
 
 [node name="TileMap" type="TileMap" parent="."]
 process_priority = -2
 z_index = -1
-position = Vector2(92, 46)
-tile_set = ExtResource("1_j1jbs")
+position = Vector2(-364, 174)
+tile_set = ExtResource("2_b07e2")
 format = 2
 layer_0/tile_data = PackedInt32Array(-2, 786434, 4, -65536, 786434, 4, -65534, 786434, 4, 65538, 786434, 4, 65536, 786434, 4, 131070, 786434, 4, 131068, 786434, 4, -4, 786434, 4, 262138, 262146, 2, 131066, 655362, 4, -6, 655362, 4, 262140, 524290, 2, 262142, 524290, 2, 262143, 524290, 2, 196609, 524290, 2, 196612, 131074, 2, 65540, 655362, 2, -65532, 655362, 2, 196610, 524290, 2, -131078, 2, 4, -262148, 2, 4, -131076, 786434, 4, -131074, 786434, 4, -196608, 786434, 4, -196606, 786434, 4, -262146, 524290, 4, -327680, 524290, 4, -327678, 393218, 4, -196604, 393218, 4)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="magicball" parent="." instance=ExtResource("3_txy8s")]
+position = Vector2(-382, 259)
 
-[node name="magicball" parent="." instance=ExtResource("3_u65mj")]
-position = Vector2(103, 66)
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-370, 108)

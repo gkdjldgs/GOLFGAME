@@ -15,6 +15,10 @@ run/main_scene="uid://bnp5fkcp2nwtu"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Holescript="*res://holescript.tscn"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")

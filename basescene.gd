@@ -4,6 +4,7 @@ var mousepos = null
 var _is_mouse_down := false
 @onready var _ball = $magicball
 var stroke = 0
+var level = 1
 func _ready():
 	pass
 	
@@ -55,3 +56,5 @@ func _mouse_released():
 		_ball.apply_impulse(Vector2(-forceX, -forceY))
 		stroke = stroke + 1
 		
+func nextlevel():
+	

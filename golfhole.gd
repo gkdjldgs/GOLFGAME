@@ -1,5 +1,5 @@
 extends Node2D
-
+var levelling = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,5 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-		if Holescript.level == 1:
-			get_tree().change_scene_to_file("res://Holenumber1.tscn")
+	if levelling == 1:
+		get_tree().change_scene_to_file("res://Holenumber2.tscn")
+		levelling = levelling + 1

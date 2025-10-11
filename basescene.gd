@@ -1,3 +1,4 @@
+#Variables
 extends Node2D
 var color = Color.AZURE
 var mousepos = null
@@ -5,12 +6,25 @@ var _is_mouse_down := false
 @onready var _ball = $magicball
 var stroke := 0
 var level = 1
-
+var levelling = 1
+var sastifaction = false
+func visis():
+	var visi = get_tree().get_root().get_node("scorehole")
+	
+	if (visi.visible == true and sastifaction == false):
+		visi.visible = false
+	elif (visi.visible == false and sastifaction == true):
+		visi.visible = true
+	elif (visi.visible == true and sastifaction == true):
+		pass
+	else:
+		pass
 func _ready():
 	pass
 	
-func _process(delta):
+func _process(_delta):
 	pass
+	#Ball movement
 func requirements():
 	if level <= 1:
 		_ball.global_position = Vector2(-370, 280)
@@ -28,11 +42,12 @@ func _input(event):
 		mousepos = get_local_mouse_position()
 	else:
 		mousepos = null
-		
+#line to draw the ball along with dif values
 	queue_redraw()
 		
 func _draw():
 	if mousepos != null:
+		visis()
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
 		if distance > 150:
@@ -45,7 +60,7 @@ func _draw():
 		elif distance < 150:
 			color = Color.DARK_BLUE
 		draw_line(_ball.position, endline, color, 7)
-
+#apply vectors on mouse released
 func _mouse_released():
 	if mousepos != null and !_ball.is_moving():
 		var endline = mousepos
@@ -60,7 +75,7 @@ func _mouse_released():
 		stroke = stroke + 1
 		_ball.apply_impulse(Vector2(-forceX, -forceY))
 		print_debug(stroke)
-		
+#hypothetical level per level requirements.
 func nextlevel():
 	if level == 1:
 		pass

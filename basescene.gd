@@ -8,17 +8,17 @@ var stroke := 0
 var level = 1
 var levelling = 1
 var sastifaction = false
+var vis = load("hole")
 func visis():
-	var visi = get_tree().get_root().get_node("scorehole")
-	
-	if (visi.visible == true and sastifaction == false):
-		visi.visible = false
-	elif (visi.visible == false and sastifaction == true):
-		visi.visible = true
-	elif (visi.visible == true and sastifaction == true):
-		pass
-	else:
-		pass
+	if vis != null:
+		if (vis.visible == true and sastifaction == false):
+			vis.visible = false
+		elif (vis.visible == false and sastifaction == true):
+			vis.visible = true
+		elif (vis.visible == true and sastifaction == true):
+			pass
+		else:
+			pass
 func _ready():
 	pass
 	

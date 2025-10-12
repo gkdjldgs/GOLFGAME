@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_5j75e"]
 [ext_resource type="TileSet" uid="uid://dfxhyp7tpkn8i" path="res://new_tile_set.tres" id="2_b07e2"]
 [ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="3_txy8s"]
-[ext_resource type="PackedScene" uid="uid://bvg7ta5t7m4pb" path="res://holescript.tscn" id="4_b07e2"]
+[ext_resource type="PackedScene" uid="uid://d4d2nh4u32sa5" path="res://scorehole.tscn" id="4_b07e2"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_5j75e")
@@ -27,4 +27,4 @@ position = Vector2(-190, 187)
 rotation = -0.2617994
 
 [node name="Node2D" parent="." instance=ExtResource("4_b07e2")]
-position = Vector2(-338, 428)
+position = Vector2(-332.99997, 435)

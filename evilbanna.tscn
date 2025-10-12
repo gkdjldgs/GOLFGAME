@@ -1,29 +1,31 @@
 [gd_scene load_steps=5 format=3 uid="uid://jvetlvg6dqtu"]
 
-[ext_resource type="Texture2D" uid="uid://b4f3oj3nug4rq" path="res://2ANGRYBANANA.png" id="1_m740h"]
 [ext_resource type="Script" uid="uid://dpp4hc0xkt04q" path="res://evilbanna.gd" id="1_ufkrj"]
+[ext_resource type="Texture2D" uid="uid://vq2w6bfvjetb" path="res://images/normalbadnana.png" id="2_ufkrj"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7g00m"]
-radius = 4.936653
-height = 18.406658
+[sub_resource type="CircleShape2D" id="CircleShape2D_ufkrj"]
+radius = 151.42786
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ufkrj"]
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2(0.51, 0.51)
 script = ExtResource("1_ufkrj")
 
 [node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.51, 0.51)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1, 2)
+position = Vector2(1.0000001, 2.0000002)
 rotation = 0.9424778
-shape = SubResource("CapsuleShape2D_7g00m")
+scale = Vector2(0.51000005, 0.51000005)
+shape = SubResource("CircleShape2D_ufkrj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("CanvasItemMaterial_ufkrj")
-position = Vector2(-1.1920929e-07, 0)
+position = Vector2(-1.9073486e-06, 0)
 rotation = 5.787512
-scale = Vector2(0.28125, 0.21875)
-texture = ExtResource("1_m740h")
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("2_ufkrj")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -9,11 +9,10 @@ var _is_mouse_down := false
 @onready var strikeout = autoload.strikeout
 @onready var count = autoload.fruit
 func striking():
-	if level == 1:
-		if autoload.stroke > autoload.strikeout:
-			get_tree().reload_current_scene()
-			autoload.stroke = 0
-			autoload.fruit = count
+	if autoload.stroke > autoload.strikeout:
+		get_tree().reload_current_scene()
+		autoload.stroke = 0
+		autoload.fruit = count
 			
 
 func _ready():

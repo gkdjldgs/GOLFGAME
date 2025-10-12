@@ -11,10 +11,11 @@ func bases():
 		stroke = 0
 		fruit = 2
 		par = 3
-		strikeout = 5
+		strikeout = 4
 
 func passes():
 	if level == 1:
+		print('wpw')
 		get_tree().change_scene_to_file("res://Holenumber2.tscn")
 		
 # Called when the node enters the scene tree for the first time.

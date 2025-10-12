@@ -1,5 +1,5 @@
 extends Node2D
-@onready var fruit = autoload.fruit
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,6 +11,6 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_area_2d_body_entered(body: RigidBody2D) -> void:
-	autoload.fruit = autoload.fruit - 1
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	autoload.stroke = autoload.stroke + 1
 	self.queue_free()

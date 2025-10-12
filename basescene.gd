@@ -6,10 +6,16 @@ var _is_mouse_down := false
 @onready var _ball = $magicball
 @onready var stroke = autoload.stroke
 @onready var level = autoload.level
+@onready var strikeout = autoload.strikeout
 
+func striking():
+	if level == 1:
+		if autoload.stroke > autoload.strikeout:
+			get_tree().reload_current_scene()
+			autoload.stroke = 0
 
 func _ready():
-	autoload.bases()
+	pass
 	
 func _process(_delta):
 	pass
@@ -57,6 +63,8 @@ func _mouse_released():
 		var forceX = (endline.x - _ball.position.x) * 6
 		var forceY = (endline.y - _ball.position.y) * 6
 		autoload.stroke = autoload.stroke + 1
+		print(autoload.stroke)
 		_ball.apply_impulse(Vector2(-forceX, -forceY))
+		striking()
 		
 #hypothetical level per level requirements.

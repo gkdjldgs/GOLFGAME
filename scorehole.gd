@@ -3,8 +3,10 @@ extends Node2D
 func vis():
 	if autoload.fruit == 0:
 		if autoload.visibility == false:
+			visibility = true
 			show()
 	elif autoload.fruit != 0 and visibility == true:
+		visibility = false
 		hide()
 	elif autoload.fruit != 0 and visibility == false:
 		hide()

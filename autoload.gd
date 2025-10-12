@@ -1,13 +1,30 @@
 extends Node2D
-var visibility = true
-var level  = 0
+var visibility = false
+var level  = 1
 var stroke = 0
 var fruit = 0
+var par = 0
+var strikeout = 0
+
+func bases():
+	if level == 1:
+		stroke = 0
+		fruit = 2
+		par = 3
+		strikeout = 5
+
+func passes():
+	if level == 1:
+		get_tree().change_scene_to_file("res://Holenumber2.tscn")
+		
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	bases()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+		

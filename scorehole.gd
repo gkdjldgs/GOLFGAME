@@ -1,28 +1,28 @@
 extends Node2D
 @onready var visibility = autoload.visibility
 func vis():
-	
-	if visibility == true:
-		show()
+	if autoload.fruit == 0:
+		if autoload.visibility == false:
+			show()
+	elif autoload.fruit != 0 and visibility == true:
+		hide()
+	elif autoload.fruit != 0 and visibility == false:
+		hide()
 	else:
 		pass
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	hide()
-	vis()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	vis()
 
 
-#func _on_area_2d_body_entered(body: Node2D) -> void:
-	#var name = get_tree().get_current_scene().get_name
-	#var nam = var_to_str(name)
-	#print(nam)
-	#if nam == ("basescene"):
-	#	get_tree().change_scene_to_file("res://Holenumber2.tscn")
-		#levelling = levelling + 1
-	#if levelling == 2:
-#		get_tree().change_scene_to_file("res://Holenumber1.tscn")
+func _on_area_2d_body_entered(body: RigidBody2D) -> void:
+	if visibility == true:
+		autoload.passes()
+	elif visibility == false:
+		pass

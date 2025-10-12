@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Holescript="*res://holescript.tscn"
 autoload="*res://autoload.gd"
+golfhole="res://scorehole.gd"
 
 [editor_plugins]
 

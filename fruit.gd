@@ -12,5 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: RigidBody2D) -> void:
-	hide()
-	autoload.fruit = autoload.fruit + 1
+	autoload.fruit = autoload.fruit - 1
+	print(autoload.fruit)
+	self.queue_free()

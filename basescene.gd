@@ -9,7 +9,7 @@ var _is_mouse_down := false
 
 
 func _ready():
-	pass
+	autoload.bases()
 	
 func _process(_delta):
 	pass
@@ -56,16 +56,7 @@ func _mouse_released():
 		
 		var forceX = (endline.x - _ball.position.x) * 6
 		var forceY = (endline.y - _ball.position.y) * 6
-		stroke = stroke + 1
+		autoload.stroke = autoload.stroke + 1
 		_ball.apply_impulse(Vector2(-forceX, -forceY))
-		print_debug(stroke)
+		
 #hypothetical level per level requirements.
-func nextlevel():
-	if level == 1:
-		pass
-	elif level == 2:
-		pass
-	elif level == 3:
-		pass
-	elif level == 4:
-		pass

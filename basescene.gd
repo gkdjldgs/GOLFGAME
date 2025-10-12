@@ -4,10 +4,8 @@ var color = Color.AZURE
 var mousepos = null
 var _is_mouse_down := false
 @onready var _ball = $magicball
-var stroke := 0
-var level = 1
-var levelling = 1
-var visibility = true
+@onready var stroke = autoload.stroke
+@onready var level = autoload.level
 
 
 func _ready():
@@ -16,11 +14,7 @@ func _ready():
 func _process(_delta):
 	pass
 	#Ball movement
-func requirements():
-	if level <= 1:
-		_ball.global_position = Vector2(-370, 280)
-	elif level <= 2:
-		_ball.global_position = Vector2(0, 0)
+
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:

@@ -7,12 +7,14 @@ var _is_mouse_down := false
 @onready var stroke = autoload.stroke
 @onready var level = autoload.level
 @onready var strikeout = autoload.strikeout
-
+@onready var count = autoload.fruit
 func striking():
 	if level == 1:
 		if autoload.stroke > autoload.strikeout:
 			get_tree().reload_current_scene()
 			autoload.stroke = 0
+			autoload.fruit = count
+			
 
 func _ready():
 	pass
@@ -40,14 +42,14 @@ func _draw():
 	if mousepos != null:
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
-		if distance > 150:
+		if distance > 225:
 			var direction = (endline - _ball.position).normalized()
 			endline = _ball.position + direction * 100
-		if distance < 50:
+		if distance < 75:
 			color = Color.AQUA
-		elif distance < 100:
-			color = Color.CORNFLOWER_BLUE
 		elif distance < 150:
+			color = Color.CORNFLOWER_BLUE
+		elif distance < 225:
 			color = Color.DARK_BLUE
 		draw_line(_ball.position, endline, color, 7)
 #apply vectors on mouse released
@@ -56,7 +58,7 @@ func _mouse_released():
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
 		
-		if distance > 100:
+		if distance > 225:
 			var direction = (endline - _ball.position).normalized()
 			endline = _ball.position + direction * 100
 		

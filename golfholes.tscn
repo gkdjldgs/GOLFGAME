@@ -7,7 +7,6 @@
 size = Vector2(122.44072, 122.44072)
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(-1, -310)
 scale = Vector2(0.715, 0.715)
 script = ExtResource("1_tcriv")
 

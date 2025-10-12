@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://c78i6yy1n3f7g"]
+
+[ext_resource type="Script" uid="uid://clgsyj7eds6hb" path="res://stroke.gd" id="1_ptcjm"]
+[ext_resource type="Texture2D" uid="uid://ob8bka6rjcuf" path="res://New Piskel.png" id="1_vng66"]
+[ext_resource type="Script" uid="uid://br6obmtxm5b5e" path="res://par.gd" id="2_4fg7c"]
+[ext_resource type="Script" uid="uid://mmkjiwu4ec84" path="res://fruitcounter.gd" id="3_88vyv"]
+
+[node name="TEXTBOX" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="STROKE" type="RichTextLabel" parent="StaticBody2D"]
+modulate = Color(0, 0, 0, 1)
+offset_right = 131.0
+offset_bottom = 40.0
+text = "STROKE:"
+fit_content = true
+script = ExtResource("1_ptcjm")
+
+[node name="PAR" type="RichTextLabel" parent="StaticBody2D"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -1.0
+offset_top = 24.0
+offset_right = 100.0
+offset_bottom = 64.0
+text = "PAR:"
+fit_content = true
+script = ExtResource("2_4fg7c")
+
+[node name="fruitcounter" type="RichTextLabel" parent="StaticBody2D"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.3784657, 0.24548784, 0.52533317, 1)
+offset_left = -1.0
+offset_top = 50.0
+offset_right = 105.0
+offset_bottom = 90.0
+text = "Fruits left:"
+fit_content = true
+scroll_active = false
+script = ExtResource("3_88vyv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+z_index = -1
+position = Vector2(52.250004, 38.999996)
+scale = Vector2(3.6093752, 2.4999998)
+texture = ExtResource("1_vng66")

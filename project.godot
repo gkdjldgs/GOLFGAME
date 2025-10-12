@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Holescript="*res://holescript.tscn"
+autoload="*res://autoload.gd"
 
 [editor_plugins]
 

@@ -7,18 +7,9 @@ var _is_mouse_down := false
 var stroke := 0
 var level = 1
 var levelling = 1
-var sastifaction = false
-var vis = load("hole")
-func visis():
-	if vis != null:
-		if (vis.visible == true and sastifaction == false):
-			vis.visible = false
-		elif (vis.visible == false and sastifaction == true):
-			vis.visible = true
-		elif (vis.visible == true and sastifaction == true):
-			pass
-		else:
-			pass
+var visibility = true
+
+
 func _ready():
 	pass
 	
@@ -47,7 +38,6 @@ func _input(event):
 		
 func _draw():
 	if mousepos != null:
-		visis()
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
 		if distance > 150:

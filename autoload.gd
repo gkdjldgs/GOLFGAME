@@ -17,12 +17,19 @@ func bases():
 		fruit = 3
 		par = 4
 		strikeout = 6
-
+	elif level == 3:
+		stroke = 0
+		fruit = 4
+		par = 8
 func passes():
 	stroke = 0
 	if level == 1:
 		get_tree().change_scene_to_file("res://Holenumber2.tscn")
 		level = 2
+		bases()
+	elif level == 2:
+		get_tree().change_scene_to_file('res://Holenumber3.tscn')
+		level = 3
 		bases()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

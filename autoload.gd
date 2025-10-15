@@ -21,7 +21,8 @@ func bases():
 	elif level == 3:
 		stroke = 0
 		fruit = 2
-		par = 5
+		par = 7
+
 func passes():
 	stroke = 0
 	if level == 1:

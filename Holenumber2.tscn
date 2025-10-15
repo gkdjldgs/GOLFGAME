@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cqur1s7igcj5n"]
+[gd_scene load_steps=12 format=3 uid="uid://cqur1s7igcj5n"]
 
 [ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_4yiap"]
 [ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="2_6vwrk"]
@@ -10,11 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://jvetlvg6dqtu" path="res://evilbanna.tscn" id="8_sm0j3"]
 [ext_resource type="Texture2D" uid="uid://c3ke4n6etp2ec" path="res://images/single green square.png" id="9_sm0j3"]
 [ext_resource type="PackedScene" uid="uid://c21cqkrt7llev" path="res://reset_button.tscn" id="10_my002"]
+[ext_resource type="PackedScene" uid="uid://cv0cjcso1fosd" path="res://singlepixel.tscn" id="11_t5dto"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_4yiap")
 
 [node name="magicball" parent="." instance=ExtResource("2_6vwrk")]
+z_index = 1
 position = Vector2(-597, 416)
 mass = 0.708
 linear_damp = 0.6
@@ -38,6 +40,7 @@ position = Vector2(-66.99999, 228)
 position = Vector2(-755, -122)
 
 [node name="GoalSignature" type="Sprite2D" parent="."]
+z_index = -1
 position = Vector2(-65.99999, 229.99998)
 scale = Vector2(0.19, 0.19)
 texture = ExtResource("6_taywl")
@@ -72,3 +75,15 @@ texture = ExtResource("9_sm0j3")
 [node name="Reset button" parent="." instance=ExtResource("10_my002")]
 position = Vector2(-624, -115)
 scale = Vector2(2, 2)
+
+[node name="Node2D7" parent="." instance=ExtResource("11_t5dto")]
+position = Vector2(-541, 420)
+
+[node name="Node2D8" parent="." instance=ExtResource("11_t5dto")]
+position = Vector2(-93, 124)
+
+[node name="Node2D9" parent="." instance=ExtResource("11_t5dto")]
+position = Vector2(-101, 124)
+
+[node name="Node2D10" parent="." instance=ExtResource("11_t5dto")]
+position = Vector2(-157, 172)

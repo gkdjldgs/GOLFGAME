@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://qy1mfvc42ac2"]
+[gd_scene load_steps=12 format=3 uid="uid://qy1mfvc42ac2"]
 
 [ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_jpcj6"]
 [ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="2_ivcqr"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c3ke4n6etp2ec" path="res://images/single green square.png" id="8_jg785"]
 [ext_resource type="PackedScene" uid="uid://jvetlvg6dqtu" path="res://evilbanna.tscn" id="9_3cin2"]
 [ext_resource type="PackedScene" uid="uid://c21cqkrt7llev" path="res://reset_button.tscn" id="10_gl848"]
+[ext_resource type="PackedScene" uid="uid://cv0cjcso1fosd" path="res://singlepixel.tscn" id="11_jpcj6"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_jpcj6")
@@ -66,3 +67,24 @@ scale = Vector2(2, 2)
 [node name="Node2D4" parent="." instance=ExtResource("9_3cin2")]
 position = Vector2(-192.99997, 337)
 rotation = 0.16580628
+
+[node name="Node2D5" parent="." instance=ExtResource("11_jpcj6")]
+position = Vector2(3, 428)
+
+[node name="Node2D6" parent="." instance=ExtResource("11_jpcj6")]
+position = Vector2(11, 420)
+
+[node name="Node2D7" parent="." instance=ExtResource("11_jpcj6")]
+position = Vector2(19, 276)
+
+[node name="Node2D8" parent="." instance=ExtResource("11_jpcj6")]
+position = Vector2(187, 276)
+
+[node name="Node2D9" parent="." instance=ExtResource("11_jpcj6")]
+position = Vector2(187, 148)
+
+[node name="Node2D10" parent="." instance=ExtResource("11_jpcj6")]
+position = Vector2(-117, 332)
+
+[node name="Node2D11" parent="." instance=ExtResource("11_jpcj6")]
+position = Vector2(-125, 332)

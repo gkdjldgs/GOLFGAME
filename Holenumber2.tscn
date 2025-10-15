@@ -17,7 +17,7 @@ script = ExtResource("1_4yiap")
 
 [node name="magicball" parent="." instance=ExtResource("2_6vwrk")]
 z_index = 1
-position = Vector2(-597, 416)
+position = Vector2(-150, 436)
 mass = 0.708
 linear_damp = 0.6
 

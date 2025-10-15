@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dx2up1uaomos2"]
 
-[ext_resource type="Script" uid="uid://ostps6yfa3k6" path="res://fruit.gd" id="1_p4uqr"]
+[ext_resource type="Script" uid="uid://b0myadtmff7v8" path="res://goodmelon.gd" id="1_p4uqr"]
 [ext_resource type="Texture2D" uid="uid://b4opyrrkkr2me" path="res://2REVERSEWATERMELON.png" id="2_p4uqr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ijonk"]

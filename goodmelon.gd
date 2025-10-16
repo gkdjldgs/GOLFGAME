@@ -13,4 +13,5 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: RigidBody2D) -> void:
 	autoload.melon == true
+	print('wowo')
 	self.queue_free()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bxf8pycwdcc4g"]
+[gd_scene load_steps=13 format=3 uid="uid://bxf8pycwdcc4g"]
 
 [ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_mbd5w"]
 [ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="2_yscvw"]
@@ -11,12 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://jvetlvg6dqtu" path="res://evilbanna.tscn" id="9_j3d5b"]
 [ext_resource type="PackedScene" uid="uid://c21cqkrt7llev" path="res://reset_button.tscn" id="10_lwg4j"]
 [ext_resource type="PackedScene" uid="uid://cv0cjcso1fosd" path="res://singlepixel.tscn" id="11_6uqqu"]
+[ext_resource type="PackedScene" uid="uid://dx2up1uaomos2" path="res://goodmelon.tscn" id="12_yscvw"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_mbd5w")
 
 [node name="magicball" parent="." instance=ExtResource("2_yscvw")]
-position = Vector2(-600, 288)
+position = Vector2(-612, 286)
 mass = 0.708
 linear_damp = 0.6
 
@@ -96,3 +97,6 @@ rotation = 0.16580628
 [node name="Node2D13" parent="." instance=ExtResource("9_j3d5b")]
 position = Vector2(-238.99995, 328.00003)
 rotation = 0.16580628
+
+[node name="Goodmelon" parent="." instance=ExtResource("12_yscvw")]
+position = Vector2(-522, 291)

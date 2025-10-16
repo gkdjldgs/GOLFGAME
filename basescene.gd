@@ -54,7 +54,6 @@ func _draw():
 #apply vectors on mouse released
 func _mouse_released():
 	if mousepos != null and !_ball.is_moving():
-		autoload.melon = false
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
 		

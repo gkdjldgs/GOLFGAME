@@ -16,4 +16,5 @@ func _on_area_2d_body_entered(body: RigidBody2D) -> void:
 		autoload.stroke = autoload.stroke + 1
 		self.queue_free()
 	elif autoload.melon == true:
+		autoload.fruit = autoload.fruit - 1
 		self.queue_free()

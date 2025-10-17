@@ -13,6 +13,7 @@ func striking():
 		get_tree().reload_current_scene()
 		autoload.stroke = 0
 		autoload.fruit = count
+		autoload.melon = false
 			
 
 func _ready():
@@ -54,6 +55,7 @@ func _draw():
 #apply vectors on mouse released
 func _mouse_released():
 	if mousepos != null and !_ball.is_moving():
+
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
 		
@@ -64,8 +66,8 @@ func _mouse_released():
 		var forceX = (endline.x - _ball.position.x) * 6
 		var forceY = (endline.y - _ball.position.y) * 6
 		autoload.stroke = autoload.stroke + 1
-		print(autoload.stroke)
 		_ball.apply_impulse(Vector2(-forceX, -forceY))
+		autoload.melon = 0
 		striking()
 		
 #hypothetical level per level requirements.

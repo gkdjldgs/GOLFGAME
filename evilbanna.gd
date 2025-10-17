@@ -12,9 +12,9 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: RigidBody2D) -> void:
-	if autoload.melon == false:
+	if autoload.melon != 1:
 		autoload.stroke = autoload.stroke + 1
 		self.queue_free()
-	elif autoload.melon == true:
+	elif autoload.melon == 1:
 		autoload.fruit = autoload.fruit - 1
 		self.queue_free()

@@ -5,8 +5,8 @@ var stroke = 0
 var fruit = 0
 var par = 0
 var strikeout = 0
-var melon = false
-
+var melon = 1
+var passt = 2
 func bases():
 	if level == 1:
 		stroke = 0

@@ -5,3 +5,4 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Hole2scrip" parent="." instance=ExtResource("1_iwf7m")]
+position = Vector2(48, -5)

@@ -19,7 +19,8 @@ func striking():
 func _ready():
 	pass
 	
-func _process(_delta):
+func _process(delta: float) -> void:
+	striking()
 	pass
 	#Ball movement
 

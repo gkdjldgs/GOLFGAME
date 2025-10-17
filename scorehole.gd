@@ -5,10 +5,10 @@ func vis():
 		if autoload.visibility == false:
 			visibility = true
 			show()
-	elif autoload.fruit != 0 and visibility == true:
+	elif autoload.fruit > 0 and visibility == true:
 		visibility = false
 		hide()
-	elif autoload.fruit != 0 and visibility == false:
+	elif autoload.fruit < 0 and visibility == false:
 		hide()
 	else:
 		pass
@@ -24,8 +24,10 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: RigidBody2D) -> void:
-	if visibility == true:
+	if visibility == true and autoload.fruit == 0:
 		await autoload.passes()
 		autoload.bases()
 	elif visibility == false:
+		pass
+	else:
 		pass

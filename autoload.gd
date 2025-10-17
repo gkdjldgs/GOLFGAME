@@ -26,7 +26,10 @@ func bases():
 		stroke = 0
 		fruit = 3
 		par = 2
-
+	elif level == 5:
+		stroke = 0
+		fruit = 4
+		par = 6
 func passes():
 	stroke = 0
 	if level == 1:
@@ -41,10 +44,14 @@ func passes():
 		get_tree().change_scene_to_file('res://Holenumber4.tscn')
 		level == 4
 		bases()
+	elif level == 4:
+		get_tree().change_scene_to_file("res://Holenumber5.tscn")
+		level = 5
+		bases()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	bases()
-
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

@@ -25,6 +25,10 @@ golfhole="res://scorehole.gd"
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
+[gui]
+
+theme/custom_font="uid://ccxn772koth8h"
+
 [input]
 
 restart={

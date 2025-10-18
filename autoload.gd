@@ -1,6 +1,7 @@
 extends Node2D
 var visibility = false
 var level  = 1
+var highest = 1
 var stroke = 0
 var fruit = 0
 var par = 0
@@ -51,7 +52,12 @@ func passes():
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	bases()
-	
+
+func highscore():
+	if highest < level:
+		highest = level
+	elif highest >= level:
+		pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

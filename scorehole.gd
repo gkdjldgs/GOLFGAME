@@ -25,6 +25,7 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: RigidBody2D) -> void:
 	if visibility == true and autoload.fruit == 0:
+		autoload.highscore()
 		await autoload.passes()
 		autoload.bases()
 	elif visibility == false:

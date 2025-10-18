@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://hhhioopudaal"]
+[gd_scene load_steps=8 format=3 uid="uid://hhhioopudaal"]
 
+[ext_resource type="Script" uid="uid://cofwylaauu1jt" path="res://lvl_0_button.gd" id="1_7v4nc"]
 [ext_resource type="Script" uid="uid://cihcn7jwah5ax" path="res://1.gd" id="1_us6ds"]
 [ext_resource type="Script" uid="uid://c4clu2esi3g0n" path="res://2.gd" id="2_7v4nc"]
 [ext_resource type="Script" uid="uid://cj8871syepjeo" path="res://level_3_but.gd" id="3_jrsw4"]
@@ -11,70 +12,71 @@
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="lvl0 button" type="Button" parent="."]
+offset_left = 78.0
+offset_top = 96.0
+offset_right = 204.0
+offset_bottom = 222.0
+script = ExtResource("1_7v4nc")
+
 [node name="Level1Button" type="Button" parent="."]
-offset_left = 80.0
-offset_top = 85.0
-offset_right = 206.0
-offset_bottom = 211.0
+offset_left = 363.0
+offset_top = 100.0
+offset_right = 489.0
+offset_bottom = 226.0
 script = ExtResource("1_us6ds")
 
 [node name="Lvl2Button" type="Button" parent="."]
-offset_left = 378.0
+offset_left = 680.0
 offset_top = 85.0
-offset_right = 504.0
+offset_right = 806.0
 offset_bottom = 211.0
 script = ExtResource("2_7v4nc")
 
 [node name="Level3but" type="Button" parent="."]
-offset_left = 686.0
-offset_top = 85.0
-offset_right = 812.0
-offset_bottom = 211.0
+offset_left = 990.0
+offset_top = 89.0
+offset_right = 1116.0
+offset_bottom = 215.0
 script = ExtResource("3_jrsw4")
 
 [node name="Lvl4but" type="Button" parent="."]
-offset_left = 984.0
-offset_top = 84.0
-offset_right = 1110.0
-offset_bottom = 210.0
+offset_left = 72.0
+offset_top = 302.0
+offset_right = 198.0
+offset_bottom = 428.0
 script = ExtResource("4_4k5to")
 
 [node name="lvl5but" type="Button" parent="."]
-offset_left = 77.0
-offset_top = 279.0
-offset_right = 203.0
-offset_bottom = 405.0
+offset_left = 373.0
+offset_top = 287.0
+offset_right = 499.0
+offset_bottom = 413.0
 script = ExtResource("5_66civ")
 
 [node name="Lvl6but" type="Button" parent="."]
-offset_left = 375.0
-offset_top = 279.0
-offset_right = 501.0
-offset_bottom = 405.0
+offset_left = 689.0
+offset_top = 285.0
+offset_right = 815.0
+offset_bottom = 411.0
 script = ExtResource("6_xogob")
 
 [node name="Lvl7but" type="Button" parent="."]
-offset_left = 683.0
-offset_top = 279.0
-offset_right = 809.0
-offset_bottom = 405.0
+offset_left = 989.0
+offset_top = 283.0
+offset_right = 1115.0
+offset_bottom = 409.0
 
 [node name="lvl8but" type="Button" parent="."]
-offset_left = 981.0
-offset_top = 278.0
-offset_right = 1107.0
-offset_bottom = 404.0
+offset_left = 79.0
+offset_top = 487.0
+offset_right = 205.0
+offset_bottom = 613.0
 
 [node name="lvl9but" type="Button" parent="."]
-offset_left = 82.0
+offset_left = 372.0
 offset_top = 490.0
-offset_right = 208.0
-offset_bottom = 616.0
-
-[node name="Lvl2Button5" type="Button" parent="."]
-offset_left = 380.0
-offset_top = 490.0
-offset_right = 506.0
+offset_right = 498.0
 offset_bottom = 616.0
 
 [node name="Level1Button6" type="Button" parent="."]
@@ -89,6 +91,7 @@ offset_top = 489.0
 offset_right = 1112.0
 offset_bottom = 615.0
 
+[connection signal="pressed" from="lvl0 button" to="lvl0 button" method="_on_pressed"]
 [connection signal="pressed" from="Level1Button" to="Level1Button" method="_on_pressed"]
 [connection signal="pressed" from="Lvl2Button" to="Lvl2Button" method="_on_pressed"]
 [connection signal="pressed" from="Level3but" to="Level3but" method="_on_pressed"]

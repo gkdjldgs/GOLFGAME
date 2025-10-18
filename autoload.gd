@@ -1,8 +1,8 @@
 extends Node2D
 var visibility = false
-var testing = 1
-var level  = 1
-var highest = 1
+var testing = 0
+var level  = 0
+var highest = -1
 var stroke = 0
 var fruit = 0
 var par = 0
@@ -10,7 +10,12 @@ var strikeout = 0
 var melon = 1
 var passt = 2
 func bases():
-	if level == 1:
+	if level == 0:
+		stroke = 0
+		fruit = 2
+		par = 3
+		strikeout = 4
+	elif level == 1:
 		stroke = 0
 		fruit = 2
 		par = 3
@@ -34,6 +39,10 @@ func bases():
 		par = 6
 func passes():
 	stroke = 0
+	if level == 0:
+		get_tree().change_scene_to_file("res://Holenumber1.tscn")
+		level = 1
+		bases()
 	if level == 1:
 		get_tree().change_scene_to_file("res://Holenumber2.tscn")
 		level = 2

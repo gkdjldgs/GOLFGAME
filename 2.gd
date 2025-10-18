@@ -12,8 +12,9 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	if autoload.highest >= 1:
+	if autoload.highest >= 1 or autoload.testing == 1:
 		autoload.level = 2
 		autoload.bases()
+		autoload.passes()
 	else:
 		pass

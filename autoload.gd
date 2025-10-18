@@ -1,5 +1,6 @@
 extends Node2D
 var visibility = false
+var testing = 1
 var level  = 1
 var highest = 1
 var stroke = 0

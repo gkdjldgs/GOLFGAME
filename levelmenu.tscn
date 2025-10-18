@@ -91,3 +91,6 @@ offset_bottom = 615.0
 
 [connection signal="pressed" from="Level1Button" to="Level1Button" method="_on_pressed"]
 [connection signal="pressed" from="Lvl2Button" to="Lvl2Button" method="_on_pressed"]
+[connection signal="pressed" from="Level3but" to="Level3but" method="_on_pressed"]
+[connection signal="pressed" from="Lvl4but" to="Lvl4but" method="_on_pressed"]
+[connection signal="pressed" from="lvl5but" to="lvl5but" method="_on_pressed"]

@@ -9,3 +9,12 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_pressed() -> void:
+	if autoload.highest >= 3 or autoload.testing == 1:
+		autoload.level = 4
+		autoload.bases()
+		autoload.passes()
+	else:
+		pass

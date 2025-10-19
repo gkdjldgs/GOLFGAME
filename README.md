@@ -67,3 +67,4 @@ WEEK (Progress per week)
    Added levels 3-5 and added the reverse watermelon
    Made the ball slightly more consistent in the speed department(can still phase through walls though)
    Added a reset button and level button, and changed both of those fromt text to pictures.
+   As a tiny little easter egg for reading this, in top right corner of le level select there is an invisble cheat button that allows you to play any level out of order.

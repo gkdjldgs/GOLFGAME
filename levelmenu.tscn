@@ -58,48 +58,62 @@ text = "5"
 script = ExtResource("4_4k5to")
 
 [node name="lvl5but" type="Button" parent="."]
-offset_left = 60.0
-offset_top = 280.0
-offset_right = 186.0
-offset_bottom = 406.0
+offset_left = 65.0
+offset_top = 260.0
+offset_right = 191.0
+offset_bottom = 386.0
+theme_override_font_sizes/font_size = 80
+text = "6"
 script = ExtResource("5_66civ")
 
 [node name="Lvl6but" type="Button" parent="."]
-offset_left = 284.0
-offset_top = 280.0
-offset_right = 410.0
-offset_bottom = 406.0
+offset_left = 289.0
+offset_top = 259.0
+offset_right = 415.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 80
+text = "7"
 script = ExtResource("6_xogob")
 
 [node name="Lvl7but" type="Button" parent="."]
-offset_left = 505.0
-offset_top = 276.0
-offset_right = 631.0
-offset_bottom = 402.0
+offset_left = 514.0
+offset_top = 259.0
+offset_right = 640.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 80
+text = "8"
 
 [node name="lvl8but" type="Button" parent="."]
-offset_left = 738.0
-offset_top = 279.0
-offset_right = 864.0
-offset_bottom = 405.0
+offset_left = 740.0
+offset_top = 259.0
+offset_right = 866.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 80
+text = "9"
 
 [node name="lvl9but" type="Button" parent="."]
-offset_left = 953.0
-offset_top = 293.0
-offset_right = 1079.0
-offset_bottom = 419.0
+offset_left = 964.0
+offset_top = 260.0
+offset_right = 1090.0
+offset_bottom = 386.0
+theme_override_font_sizes/font_size = 80
+text = "10"
 
 [node name="Level1Button6" type="Button" parent="."]
-offset_left = 64.0
-offset_top = 484.0
-offset_right = 190.0
-offset_bottom = 610.0
+offset_left = 65.0
+offset_top = 445.0
+offset_right = 191.0
+offset_bottom = 571.0
+theme_override_font_sizes/font_size = 80
+text = "11"
 
 [node name="Lvl2Button6" type="Button" parent="."]
-offset_left = 296.0
-offset_top = 470.0
-offset_right = 422.0
-offset_bottom = 596.0
+offset_left = 289.0
+offset_top = 445.0
+offset_right = 415.0
+offset_bottom = 571.0
+theme_override_font_sizes/font_size = 80
+text = "12"
 
 [connection signal="pressed" from="lvl0 button" to="lvl0 button" method="_on_pressed"]
 [connection signal="pressed" from="Level1Button" to="Level1Button" method="_on_pressed"]

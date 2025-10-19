@@ -45,7 +45,7 @@ position = Vector2(-541, 56)
 position = Vector2(-613, 397)
 
 [node name="TEXTBOX" parent="." instance=ExtResource("6_grkhl")]
-position = Vector2(-138, 3)
+position = Vector2(9, 404)
 
 [node name="GoalSignature" type="Sprite2D" parent="."]
 z_index = -2
@@ -62,7 +62,7 @@ position = Vector2(-438.99997, 161.99998)
 rotation = 0.16580628
 
 [node name="Reset button" parent="." instance=ExtResource("10_bfb22")]
-position = Vector2(-256, 7)
+position = Vector2(-114, 396)
 scale = Vector2(2, 2)
 
 [node name="Node2D4" parent="." instance=ExtResource("11_v1nmw")]

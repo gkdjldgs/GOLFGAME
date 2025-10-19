@@ -37,7 +37,7 @@ z_index = 1
 position = Vector2(-66.99999, 228)
 
 [node name="TEXTBOX" parent="." instance=ExtResource("5_6vwrk")]
-position = Vector2(-755, -122)
+position = Vector2(258, 421)
 
 [node name="GoalSignature" type="Sprite2D" parent="."]
 z_index = -1
@@ -73,7 +73,7 @@ position = Vector2(-16, -24)
 texture = ExtResource("9_sm0j3")
 
 [node name="Reset button" parent="." instance=ExtResource("10_my002")]
-position = Vector2(-624, -115)
+position = Vector2(131, 414)
 scale = Vector2(2, 2)
 
 [node name="Node2D7" parent="." instance=ExtResource("11_t5dto")]

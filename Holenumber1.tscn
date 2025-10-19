@@ -63,7 +63,7 @@ position = Vector2(-438.99997, 161.99998)
 rotation = 0.16580628
 
 [node name="Reset button" parent="." instance=ExtResource("10_bfb22")]
-position = Vector2(-1, 321)
+position = Vector2(67, 320)
 scale = Vector2(2, 2)
 
 [node name="Node2D4" parent="." instance=ExtResource("11_v1nmw")]
@@ -73,4 +73,4 @@ position = Vector2(-293, 372)
 position = Vector2(-357, 372)
 
 [node name="Node2D6" parent="." instance=ExtResource("12_55ivu")]
-position = Vector2(71, 321)
+position = Vector2(-5, 320)

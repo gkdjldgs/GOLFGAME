@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt27dig0v8t81"
-path="res://.godot/imported/2WEIRDAPPLE.png-8fa80618adb33916911bcf18b5904eb6.ctex"
+uid="uid://vy7ca4gmqdcl"
+path="res://.godot/imported/level button.png-e583c334dc262d1dbf13a26aa224c211.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2WEIRDAPPLE.png"
-dest_files=["res://.godot/imported/2WEIRDAPPLE.png-8fa80618adb33916911bcf18b5904eb6.ctex"]
+source_file="res://images/level button.png"
+dest_files=["res://.godot/imported/level button.png-e583c334dc262d1dbf13a26aa224c211.ctex"]
 
 [params]
 

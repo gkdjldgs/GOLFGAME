@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4f3oj3nug4rq"
-path="res://.godot/imported/2ANGRYBANANA.png-dd14665c327631f156a3f41d64433b0a.ctex"
+uid="uid://bk1eepym1m5hb"
+path="res://.godot/imported/singlepixel.png-6594737eccc827ca4d1cebb4e139d546.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2ANGRYBANANA.png"
-dest_files=["res://.godot/imported/2ANGRYBANANA.png-dd14665c327631f156a3f41d64433b0a.ctex"]
+source_file="res://images/singlepixel.png"
+dest_files=["res://.godot/imported/singlepixel.png-6594737eccc827ca4d1cebb4e139d546.ctex"]
 
 [params]
 

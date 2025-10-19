@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxs2xu5s6gs1l"
-path="res://.godot/imported/2GolfCauldron.png-d3a8c3d3b0dadfb5f564c53166c5cac7.ctex"
+uid="uid://7olkf0lpwqga"
+path="res://.godot/imported/2MagicGolfBall.png-160a934250ba29da6e9405d6a76299ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2GolfCauldron.png"
-dest_files=["res://.godot/imported/2GolfCauldron.png-d3a8c3d3b0dadfb5f564c53166c5cac7.ctex"]
+source_file="res://images/2MagicGolfBall.png"
+dest_files=["res://.godot/imported/2MagicGolfBall.png-160a934250ba29da6e9405d6a76299ac.ctex"]
 
 [params]
 

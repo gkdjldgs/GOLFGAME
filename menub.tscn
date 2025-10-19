@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://7f4rnjj1cpwc"]
+
+[ext_resource type="Script" uid="uid://o6sfcuvqa7ti" path="res://menub.gd" id="1_6xj86"]
+[ext_resource type="Texture2D" uid="uid://vy7ca4gmqdcl" path="res://images/level button.png" id="1_i1w8q"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_6xj86")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 19.0
+offset_bottom = 19.0
+icon = ExtResource("1_i1w8q")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+visible = false
+texture = ExtResource("1_i1w8q")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

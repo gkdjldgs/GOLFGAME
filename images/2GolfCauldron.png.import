@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do1aokn4amj8a"
-path="res://.godot/imported/2SPRITESHEET.png-71e8c7f1ec1a729da54be2e5855d5ffc.ctex"
+uid="uid://cxs2xu5s6gs1l"
+path="res://.godot/imported/2GolfCauldron.png-cb2e326a3a2466bcece8838951b255e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2SPRITESHEET.png"
-dest_files=["res://.godot/imported/2SPRITESHEET.png-71e8c7f1ec1a729da54be2e5855d5ffc.ctex"]
+source_file="res://images/2GolfCauldron.png"
+dest_files=["res://.godot/imported/2GolfCauldron.png-cb2e326a3a2466bcece8838951b255e7.ctex"]
 
 [params]
 

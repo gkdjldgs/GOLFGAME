@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dwhexbg23mbpb"]
 
 [ext_resource type="Script" uid="uid://dgr803m1ro420" path="res://scorehole.gd" id="1_tcriv"]
-[ext_resource type="Texture2D" uid="uid://cxs2xu5s6gs1l" path="res://2GolfCauldron.png" id="2_ufny7"]
+[ext_resource type="Texture2D" uid="uid://cxs2xu5s6gs1l" path="res://images/2GolfCauldron.png" id="2_ufny7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d40ka"]
 size = Vector2(122.44072, 122.44072)

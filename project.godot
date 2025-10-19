@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Golfgame2"
-run/main_scene="uid://bnp5fkcp2nwtu"
+run/main_scene="uid://hhhioopudaal"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 

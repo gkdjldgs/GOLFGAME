@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk1eepym1m5hb"
-path="res://.godot/imported/singlepixel.png-09627438653458118f1a9862e26fa344.ctex"
+uid="uid://b4opyrrkkr2me"
+path="res://.godot/imported/2REVERSEWATERMELON.png-af0053854e8e116d331c9dded22e93e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://singlepixel.png"
-dest_files=["res://.godot/imported/singlepixel.png-09627438653458118f1a9862e26fa344.ctex"]
+source_file="res://images/2REVERSEWATERMELON.png"
+dest_files=["res://.godot/imported/2REVERSEWATERMELON.png-af0053854e8e116d331c9dded22e93e3.ctex"]
 
 [params]
 

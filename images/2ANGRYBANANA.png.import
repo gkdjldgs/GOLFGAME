@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dssoxn6c5f12o"
-path="res://.godot/imported/2SADORANGE.png-0f59161f10dcf3299c96e4e06aa780c8.ctex"
+uid="uid://b4f3oj3nug4rq"
+path="res://.godot/imported/2ANGRYBANANA.png-5c6884be75c62d14522a45a5b5fd64e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2SADORANGE.png"
-dest_files=["res://.godot/imported/2SADORANGE.png-0f59161f10dcf3299c96e4e06aa780c8.ctex"]
+source_file="res://images/2ANGRYBANANA.png"
+dest_files=["res://.godot/imported/2ANGRYBANANA.png-5c6884be75c62d14522a45a5b5fd64e2.ctex"]
 
 [params]
 

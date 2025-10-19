@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bxf8pycwdcc4g"]
+[gd_scene load_steps=14 format=3 uid="uid://bxf8pycwdcc4g"]
 
 [ext_resource type="Script" uid="uid://cuglevung3mr4" path="res://basescene.gd" id="1_mbd5w"]
 [ext_resource type="PackedScene" uid="uid://cvvxlh2am43bo" path="res://magicball.tscn" id="2_yscvw"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://c21cqkrt7llev" path="res://reset_button.tscn" id="10_lwg4j"]
 [ext_resource type="PackedScene" uid="uid://cv0cjcso1fosd" path="res://singlepixel.tscn" id="11_6uqqu"]
 [ext_resource type="PackedScene" uid="uid://dx2up1uaomos2" path="res://goodmelon.tscn" id="12_yscvw"]
+[ext_resource type="PackedScene" uid="uid://7f4rnjj1cpwc" path="res://menub.tscn" id="13_we2ko"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_mbd5w")
@@ -43,7 +44,7 @@ position = Vector2(67.81256, 274.2851)
 position = Vector2(64, 359)
 
 [node name="TEXTBOX" parent="." instance=ExtResource("6_up344")]
-position = Vector2(-754, 411)
+position = Vector2(-760, 409)
 
 [node name="GoalSignature" type="Sprite2D" parent="."]
 z_index = -2
@@ -60,7 +61,7 @@ position = Vector2(-421, 299)
 rotation = 0.16580628
 
 [node name="Reset button" parent="." instance=ExtResource("10_lwg4j")]
-position = Vector2(-763, 337)
+position = Vector2(-772, 329)
 scale = Vector2(2, 2)
 
 [node name="Node2D4" parent="." instance=ExtResource("11_6uqqu")]
@@ -84,3 +85,6 @@ rotation = 0.16580628
 
 [node name="Goodmelon" parent="." instance=ExtResource("12_yscvw")]
 position = Vector2(-515, 303)
+
+[node name="Node2D" parent="." instance=ExtResource("13_we2ko")]
+position = Vector2(-698, 328)

@@ -1,17 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://c21cqkrt7llev"]
+[gd_scene load_steps=3 format=3 uid="uid://cwtimlixlfe32"]
 
-[ext_resource type="Script" uid="uid://djuj6nr44a5nj" path="res://reset_button.gd" id="1_emgp1"]
-[ext_resource type="Texture2D" uid="uid://b7vjp6ggcdf5j" path="res://images/resetbutton.png" id="2_emgp1"]
+[ext_resource type="Script" uid="uid://djuj6nr44a5nj" path="res://reset_button.gd" id="1_bvfbt"]
+[ext_resource type="Texture2D" uid="uid://b7vjp6ggcdf5j" path="res://images/resetbutton.png" id="2_hepno"]
 
 [node name="Reset button" type="Node2D"]
-scale = Vector2(0.5, 0.5)
-script = ExtResource("1_emgp1")
+script = ExtResource("1_bvfbt")
 
 [node name="Button" type="Button" parent="."]
 texture_filter = 5
 offset_right = 51.0
 offset_bottom = 31.0
-scale = Vector2(0.5, 0.5)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
@@ -23,14 +21,13 @@ theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 16
-icon = ExtResource("2_emgp1")
-metadata/_edit_use_anchors_ = true
+icon = ExtResource("2_hepno")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1
 texture_filter = 1
-position = Vector2(18, 18)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_emgp1")
+position = Vector2(36, 36)
+scale = Vector2(1.046875, 1.0390626)
+texture = ExtResource("2_hepno")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

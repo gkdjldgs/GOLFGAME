@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v64xxlkw2t4g"
-path="res://.godot/imported/fixing.png-a2582f5e277401ddf96c2af130e508b9.ctex"
+uid="uid://dssoxn6c5f12o"
+path="res://.godot/imported/2SADORANGE.png-53f4fed02c6884b176b1bb2a0f19517a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fixing.png"
-dest_files=["res://.godot/imported/fixing.png-a2582f5e277401ddf96c2af130e508b9.ctex"]
+source_file="res://images/2SADORANGE.png"
+dest_files=["res://.godot/imported/2SADORANGE.png-53f4fed02c6884b176b1bb2a0f19517a.ctex"]
 
 [params]
 

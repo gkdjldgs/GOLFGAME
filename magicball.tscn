@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cvvxlh2am43bo"]
 
 [ext_resource type="Script" uid="uid://b5lob2fa4vy7r" path="res://magicball.gd" id="1_tiuuw"]
-[ext_resource type="Texture2D" uid="uid://7olkf0lpwqga" path="res://2MagicGolfBall.png" id="1_xl47p"]
+[ext_resource type="Texture2D" uid="uid://7olkf0lpwqga" path="res://images/2MagicGolfBall.png" id="1_xl47p"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xl47p"]
 bounce = 1.0

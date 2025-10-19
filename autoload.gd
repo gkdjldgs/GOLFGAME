@@ -1,6 +1,6 @@
 extends Node2D
 var visibility = false
-var testing = 1
+var testing = 0
 var level  = 0
 var highest = -1
 var stroke = 0
@@ -76,7 +76,12 @@ func highscore():
 		highest = level
 	elif highest >= level:
 		pass
-
+func cheaters():
+	if testing == 1:
+		testing = 0
+	elif testing == 0:
+		testing = 1
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

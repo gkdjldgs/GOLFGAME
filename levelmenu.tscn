@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://hhhioopudaal"]
+[gd_scene load_steps=10 format=3 uid="uid://hhhioopudaal"]
 
+[ext_resource type="Script" uid="uid://dwhvpa6umr61s" path="res://cheaterbutton.gd" id="1_4k5to"]
 [ext_resource type="Script" uid="uid://cofwylaauu1jt" path="res://lvl_0_button.gd" id="1_7v4nc"]
 [ext_resource type="Script" uid="uid://cihcn7jwah5ax" path="res://1.gd" id="1_us6ds"]
 [ext_resource type="Script" uid="uid://c4clu2esi3g0n" path="res://2.gd" id="2_7v4nc"]
@@ -7,61 +8,91 @@
 [ext_resource type="Script" uid="uid://ivfmmlk48ay0" path="res://lvl_4_but.gd" id="4_4k5to"]
 [ext_resource type="Script" uid="uid://b6kqn3jb4fquj" path="res://lvl5but.gd" id="5_66civ"]
 [ext_resource type="Script" uid="uid://3cayxhvy1sts" path="res://lvl6but.gd" id="6_xogob"]
+[ext_resource type="Texture2D" uid="uid://cyfe23at6qc0l" path="res://images/levelbackground.png" id="8_jrsw4"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer"]
+z_index = 1
+offset_left = 518.0
+offset_top = 21.999994
+offset_right = 1056.0677
+offset_bottom = 161.07692
+rotation = 0.2617994
+theme_override_font_sizes/normal_font_size = 93
+text = "SELECTION"
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+z_index = -3
+offset_left = 118.0
+offset_top = 28.0
+offset_right = 360.0
+offset_bottom = 199.0
+script = ExtResource("1_4k5to")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Button"]
+z_index = 1
+layout_mode = 0
+offset_left = 25.000023
+offset_top = -13.000002
+offset_right = 384.20377
+offset_bottom = 126.07692
+rotation = 0.2617994
+theme_override_font_sizes/normal_font_size = 93
+text = "LEVEL"
+
 [node name="lvl0 button" type="Button" parent="."]
 offset_left = 65.0
-offset_top = 69.0
+offset_top = 255.0
 offset_right = 191.0
-offset_bottom = 195.0
+offset_bottom = 381.0
 theme_override_font_sizes/font_size = 80
 text = "1"
 script = ExtResource("1_7v4nc")
 
 [node name="Level1Button" type="Button" parent="."]
 offset_left = 289.0
-offset_top = 69.0
+offset_top = 255.0
 offset_right = 415.0
-offset_bottom = 195.0
+offset_bottom = 381.0
 theme_override_font_sizes/font_size = 80
 text = "2"
 script = ExtResource("1_us6ds")
 
 [node name="Lvl2Button" type="Button" parent="."]
 offset_left = 514.0
-offset_top = 69.0
+offset_top = 255.0
 offset_right = 640.0
-offset_bottom = 195.0
+offset_bottom = 381.0
 theme_override_font_sizes/font_size = 80
 text = "3"
 script = ExtResource("2_7v4nc")
 
 [node name="Level3but" type="Button" parent="."]
 offset_left = 740.0
-offset_top = 69.0
+offset_top = 255.0
 offset_right = 866.0
-offset_bottom = 195.0
+offset_bottom = 381.0
 theme_override_font_sizes/font_size = 80
 text = "4"
 script = ExtResource("3_jrsw4")
 
 [node name="Lvl4but" type="Button" parent="."]
 offset_left = 963.0
-offset_top = 69.0
+offset_top = 255.0
 offset_right = 1089.0
-offset_bottom = 195.0
+offset_bottom = 381.0
 theme_override_font_sizes/font_size = 80
 text = "5"
 script = ExtResource("4_4k5to")
 
 [node name="lvl5but" type="Button" parent="."]
 offset_left = 65.0
-offset_top = 260.0
+offset_top = 446.0
 offset_right = 191.0
-offset_bottom = 386.0
+offset_bottom = 572.0
 theme_override_font_sizes/font_size = 80
 text = "6"
 script = ExtResource("5_66civ")
@@ -121,6 +152,13 @@ offset_bottom = 571.0
 theme_override_font_sizes/font_size = 80
 text = "12"
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+z_index = -1
+position = Vector2(555, 296)
+texture = ExtResource("8_jrsw4")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]
 [connection signal="pressed" from="lvl0 button" to="lvl0 button" method="_on_pressed"]
 [connection signal="pressed" from="Level1Button" to="Level1Button" method="_on_pressed"]
 [connection signal="pressed" from="Lvl2Button" to="Lvl2Button" method="_on_pressed"]

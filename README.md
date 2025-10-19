@@ -52,3 +52,18 @@ autoload.fruit determines how many fruit you have to collect until the hole appe
 The holes or levels themselves are made up of a tile map that provides walls and boundaries for the ball to move. 
 The powerups and the hole are just copys of different scenes that are made to wrok on each hole.
 Everytime the level is beaten the autoload.highest acts a way for a person to go back to the menu and still save their progress, by checking the highest level a person has beaten giving access to the respective level buttons
+
+WEEK (Progress per week)
+1. I added alot of the basic systems in a standard golf game, like stroke, and over par. I got the ball to collide with and bounce off colliision added in the tileset using paint physicsprocess 0
+   I created some levels 1 - 3, with the basic mechanics added to them, started level 4 but didn't finish it.
+   For the ball I added a indicator to show how much power there was, and based forced applied based on distance from cursor. Also I attempted to solve a problem where it just goes through walls if fast enough.
+   Made the hole appear when required fruits drops down to zero, and take the player to the next level.
+   Added evil and normal banana to reach those requirements, and a stroke limit when you go over par
+   Finally learned how to use autoload for a global scene, this was really helpful for global commands and variables
+   Learned that I could hide the hole with hide() and show()(srsly)
+2. Added some visual clean up to the game's existing holes
+   Added a level menu to make it easier to access the levels
+   Made the hitboxes of slopesspecifically extend a bit further for more consistent bounces
+   Added levels 3-5 and added the reverse watermelon
+   Made the ball slightly more consistent in the speed department(can still phase through walls though)
+   Added a reset button and level button, and changed both of those fromt text to pictures.

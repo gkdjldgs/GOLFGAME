@@ -12,4 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
+	autoload.level = 0
+	autoload.bases()
 	get_tree().change_scene_to_file("res://Holenumber1.tscn")

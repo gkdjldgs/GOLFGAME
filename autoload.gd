@@ -28,15 +28,15 @@ func bases():
 	elif level == 3:
 		stroke = 0
 		fruit = 2
-		par = 7
+		strikeout = 7
 	elif level == 4:
 		stroke = 0
 		fruit = 3
-		par = 2
+		strikeout = 6
 	elif level == 5:
 		stroke = 0
 		fruit = 4
-		par = 6
+		strikeout = 6
 func passes():
 	stroke = 0
 	if level == 0:

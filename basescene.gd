@@ -8,6 +8,7 @@ var _is_mouse_down := false
 @onready var level = autoload.level
 @onready var strikeout = autoload.strikeout
 @onready var count = autoload.fruit
+
 func striking():
 	if autoload.stroke > autoload.strikeout:
 		get_tree().reload_current_scene()
@@ -34,6 +35,8 @@ func _input(event):
 				_mouse_released()
 	if event is InputEventMouseMotion and _is_mouse_down:
 		mousepos = get_local_mouse_position()
+	
+		
 	else:
 		mousepos = null
 #line to draw the ball along with dif values
@@ -43,32 +46,35 @@ func _draw():
 	if mousepos != null:
 		var endline = mousepos
 		var distance = _ball.position.distance_to(endline)
-		if distance > 150:
+		if distance > 100:
 			var direction = (endline - _ball.position).normalized()
 			endline = _ball.position + direction * 100
-		if distance < 50:
+		if distance < 33:
 			color = Color.AQUA
-		elif distance < 100:
+		elif distance < 66:
 			color = Color.CORNFLOWER_BLUE
-		elif distance < 150:
+		elif distance < 100:
 			color = Color.DARK_BLUE
 		draw_line(_ball.position, endline, color, 7)
 #apply vectors on mouse released
 func _mouse_released():
-	if mousepos != null and !_ball.is_moving():
-
-		var endline = mousepos
-		var distance = _ball.position.distance_to(endline)
-		
-		if distance > 150:
-			var direction = (endline - _ball.position).normalized()
-			endline = _ball.position + direction * 100
-		
-		var forceX = (endline.x - _ball.position.x) * 6
-		var forceY = (endline.y - _ball.position.y) * 6
-		autoload.stroke = autoload.stroke + 1
-		_ball.apply_impulse(Vector2(-forceX, -forceY))
-		autoload.melon = 0
-		striking()
+	if mousepos != null:
+			_ball.velocity = Vector2(0.001,0.001)
+			if _ball.velocity == Vector2(0.001,0.001):
+				var endline = mousepos
+				var distance = _ball.position.distance_to(endline)
+			
+				if distance > 100:
+					var direction = (endline - _ball.position).normalized()
+					endline = _ball.position + direction * 100
+			
+				var forceX = (endline.x - _ball.position.x) * 4
+				var forceY = (endline.y - _ball.position.y) * 4
+				autoload.stroke = autoload.stroke + 1
+				_ball.apply_impulse(Vector2(-forceX, -forceY))
+				autoload.melon = 0
+				striking()
+	else:
+		pass
 		
 #hypothetical level per level requirements.

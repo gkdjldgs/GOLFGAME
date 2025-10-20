@@ -167,8 +167,8 @@ text = "12"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(572.5, 318.5)
-scale = Vector2(1.0303819, 1.0694444)
+position = Vector2(575.48376, 322.5)
+scale = Vector2(1.1275761, 1.1898148)
 texture = ExtResource("8_jrsw4")
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]

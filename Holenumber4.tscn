@@ -19,7 +19,7 @@ script = ExtResource("1_mbd5w")
 
 [node name="magicball" parent="." instance=ExtResource("2_yscvw")]
 position = Vector2(-607, 300)
-mass = 0.708
+mass = 0.6
 linear_damp = 0.6
 
 [node name="TileMap" type="TileMap" parent="."]

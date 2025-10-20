@@ -72,12 +72,12 @@ func _mouse_released():
 				autoload.melon = 0
 				striking()
 		if _ball.is_moving():
-			if _ball.linear_velocity < Vector2(4,4):
+			if _ball.linear_velocity < Vector2(5,5):
 				var endline = mousepos
 				var distance = _ball.position.distance_to(endline)
 				if distance > 100:
 					var direction = (endline - _ball.position).normalized()
-					endline = _ball.position + direction * 100
+					endline = _ball.position + direction * 150
 			
 				var forceX = (endline.x - _ball.position.x) * 4
 				var forceY = (endline.y - _ball.position.y) * 4

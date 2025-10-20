@@ -21,6 +21,10 @@ Holescript="*res://holescript.tscn"
 autoload="*res://autoload.gd"
 golfhole="res://scorehole.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")

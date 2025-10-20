@@ -8,7 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	print(self.global_position)
+	pass
 
 func is_moving():
 	return get_linear_velocity().length() > NOMOVING

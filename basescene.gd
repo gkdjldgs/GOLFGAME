@@ -22,7 +22,6 @@ func _ready():
 	
 func _process(delta: float) -> void:
 	striking()
-	pass
 	#Ball movement
 
 func _input(event):
@@ -59,11 +58,9 @@ func _draw():
 #apply vectors on mouse released
 func _mouse_released():
 	if mousepos != null:
-			_ball.velocity = Vector2(0.001,0.001)
-			if _ball.velocity == Vector2(0.001,0.001):
+		if _ball.is_moving() == false:
 				var endline = mousepos
 				var distance = _ball.position.distance_to(endline)
-			
 				if distance > 100:
 					var direction = (endline - _ball.position).normalized()
 					endline = _ball.position + direction * 100
@@ -74,7 +71,20 @@ func _mouse_released():
 				_ball.apply_impulse(Vector2(-forceX, -forceY))
 				autoload.melon = 0
 				striking()
-	else:
-		pass
+		if _ball.is_moving():
+			if _ball.linear_velocity < Vector2(4,4):
+				var endline = mousepos
+				var distance = _ball.position.distance_to(endline)
+				if distance > 100:
+					var direction = (endline - _ball.position).normalized()
+					endline = _ball.position + direction * 100
+			
+				var forceX = (endline.x - _ball.position.x) * 4
+				var forceY = (endline.y - _ball.position.y) * 4
+				autoload.stroke = autoload.stroke + 1
+				_ball.apply_impulse(Vector2(-forceX, -forceY))
+				autoload.melon = 0
+				striking()
+
 		
-#hypothetical level per level requirements.
+	#hypothetical level per level requirements.
